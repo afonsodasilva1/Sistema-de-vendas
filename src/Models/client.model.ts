@@ -5,6 +5,6 @@ export class Client {
     @PrimaryGeneratedColumn('uuid')
     id: string
 
-    @Column('varchar')
+    @Column({name: 'name', unique: true})
     name: string
 }
