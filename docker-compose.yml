@@ -1,11 +1,11 @@
-version: '4'
+version: '3'
 services:
-  db:
-      image: 'postgres:latest'
-      restart: 'always'
+  postgres:
+      image: postgres:latest
+      restart: always
       environment:
-        - POSTGRES_USER: postgres
-        - POSTGRES_PASSWORD: 945332002Af*
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=945332002Af*
       logging: 
         options: 
             max-size: 10m
